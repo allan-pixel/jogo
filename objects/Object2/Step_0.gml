@@ -15,4 +15,11 @@ if keyboard_check(vk_down) or keyboard_check(ord("S")){
 if keyboard_check(vk_right) or keyboard_check(ord("D")){
 	x += velocidade
 	 image_xscale = 1
-}   
+}#region transição de fase
+
+    if pontos == 10{
+		room_goto_next()
+		
+	}
+
+#endregion
